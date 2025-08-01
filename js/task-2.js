@@ -1,10 +1,8 @@
 function calcAverageCalories(days) {
     const allDays = days.length;
-    const values = days
-    
     let total = 0;
     
-    for (const caloriesOfOneDay of values) {
+    for (const caloriesOfOneDay of days) {
         total += caloriesOfOneDay.calories / allDays
     }
     return total
